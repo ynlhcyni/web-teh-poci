@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teh Poci Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Teh Poci Store</h1>
+        <nav>
+            <a href="#products">Produk</a>
+            <a href="#cart">Keranjang</a>
+            <a href="#faq">FAQ</a>
+            <a href="#terms">Syarat & Ketentuan</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <h2>Rasakan Kesegaran Asli dari Teh Poci</h2>
+            <p>Teh terbaik untuk setiap momen Anda!</p>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Produk Kami</h2>
+            <div class="product-card">
+                <img src="images/es_teh.jpg" alt="Es Teh Poci">
+                <h3>Es Teh Poci</h3>
+                <p>Harga: Rp10.000</p>
+                <button onclick="addToCart('Es Teh Poci', 10000)">Tambahkan ke Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="images/teh_poci.jpg" alt="Teh Poci Original">
+                <h3>Teh Poci Original</h3>
+                <p>Harga: Rp15.000</p>
+                <button onclick="addToCart('Teh Poci Original', 15000)">Tambahkan ke Keranjang</button>
+            </div>
+        </section>
+
+        <section id="cart" class="cart">
+            <h2>Keranjang Belanja</h2>
+            <div id="cartItems"></div>
+            <p>Total: Rp<span id="totalPrice">0</span></p>
+            <button onclick="checkout()">Bayar</button>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2>FAQ</h2>
+            <p><strong>Apakah pengiriman tersedia?</strong> Ya, kami menyediakan layanan pengiriman ke seluruh Indonesia.</p>
+            <p><strong>Bagaimana cara membayar?</strong> Anda dapat membayar melalui transfer bank atau e-wallet.</p>
+        </section>
+
+        <section id="terms" class="terms">
+            <h2>Syarat & Ketentuan</h2>
+            <p>1. Produk yang sudah dibeli tidak dapat dikembalikan.</p>
+            <p>2. Pengiriman dilakukan setelah pembayaran diterima.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Teh Poci Store</p>
+        <p>Hubungi kami: tehpoci@store.com | 0812-3456-7890</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
